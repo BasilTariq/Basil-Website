@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basil Tariq | AI Engineer & Digital Strategist</title>
+  <meta name="description" content="Personal portfolio of Basil Tariq - BS Artificial Intelligence Undergraduate at Iqra University, AI & Digital Content Strategist, and Software Developer.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌲</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Background Ambient Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" id="logoLink">
+        <span class="logo-dot"></span>
+        BASIL TARIQ
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-links">
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#skills" class="mobile-nav-link">Skills</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>
+  </div>
+  <div class="nav-backdrop" id="navBackdrop"></div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <!-- Hero Text Content -->
+        <div class="hero-content fade-left">
+          <div class="hero-greeting-badge">
+            <span class="status-dot"></span>
+            👋 Hello, I'm
+          </div>
+          
+          <h1 class="hero-title">
+            Basil <span>Tariq</span>
+          </h1>
+
+          <div class="hero-tagline">
+            <span>&gt;</span>
+            <span id="typewriter" class="typewriter">BS Artificial Intelligence Student @ Iqra University</span>
+          </div>
+
+          <p class="hero-bio">
+            I'm an Artificial Intelligence student at Iqra University who builds software and creates technical content. I spend my time coding Java and C applications while managing social media strategy for AI Cloud Solutions (@aicloudsl). I enjoy turning engineering ideas into clean code and clear digital media.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-folder-open btn-icon"></i>
+              See My Work
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fas fa-paper-plane btn-icon"></i>
+              Get in Touch
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Avatar Card -->
+        <div class="hero-avatar-wrapper fade-right scale-up delay-2">
+          <div class="avatar-card">
+            <div class="avatar-img-container">
+              <img src="assets/images/basil.jpg" alt="Basil Tariq - AI Student & Media Strategist" class="avatar-img">
+            </div>
+            
+            <div class="avatar-experience-badge">
+              <div class="badge-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div>
+                <div class="badge-text-primary">BS AI Student</div>
+                <div class="badge-text-sub">Iqra University</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <div class="section-tag">
+            <i class="fas fa-user"></i> 01. About Me
+          </div>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-description">
+            Building software fundamentals while growing real digital brands.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Main Narrative Card -->
+          <div class="glass-card about-card fade-left delay-1">
+            <div>
+              <h3><i class="fas fa-seedling"></i> Developer & Digital Strategist</h3>
+              <p class="about-text">
+                I'm an undergraduate student pursuing a <strong>Bachelor of Science in Artificial Intelligence at Iqra University</strong>. My coursework covers essential computer science foundations—writing Object-Oriented Java applications, building low-level C programs, working with data structures, and learning core AI principles.
+              </p>
+              <p class="about-text">
+                Alongside my studies, I lead social media management and content strategy for <strong>AI Cloud Solutions (@aicloudsl)</strong>. Managing content for @aicloudsl gives me real experience breaking down cloud infrastructure and AI tools for developers and tech enthusiasts. Combining software development with content creation helps me understand both how technology is built and how people connect with it online.
+              </p>
+            </div>
+            <div>
+              <div class="institution-pill">
+                <i class="fas fa-university"></i> Iqra University • BS AI Candidate
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlight Metrics & Focus Cards -->
+          <div class="stats-grid fade-right delay-2">
+            <div class="stat-card">
+              <div class="stat-number">BS AI</div>
+              <div class="stat-label">Student @ Iqra Univ</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-number">@aicloudsl</div>
+              <div class="stat-label">Content & Socials</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-number">3+</div>
+              <div class="stat-label">Developer Projects</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-number">2-in-1</div>
+              <div class="stat-label">Code & Strategy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <div class="section-tag">
+            <i class="fas fa-code"></i> 02. Work
+          </div>
+          <h2 class="section-title">Explore My Work</h2>
+          <p class="section-description">
+            Software projects I've built in Java & C alongside social media campaigns for @aicloudsl.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="project-filters scroll-reveal delay-1">
+          <button class="filter-btn active" data-filter="all">All Work</button>
+          <button class="filter-btn" data-filter="tech">Software Projects</button>
+          <button class="filter-btn" data-filter="media">Digital Media (@aicloudsl)</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project Card 1 (Tech) -->
+          <div class="glass-card project-card scale-up delay-1" data-category="tech">
+            <div class="project-header">
+              <i class="fas fa-laptop-code project-folder-icon"></i>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener" class="project-link-btn" aria-label="GitHub Repository">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Desktop ATM Withdrawal & Transfer System</h3>
+            <p class="project-description">
+              A desktop banking application I built in Java to master Object-Oriented Programming. It handles user authentication, cash withdrawals, balance tracking, and account-to-account transfers with input validation to keep user data safe.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">OOP</span>
+              <span class="tech-tag">Swing GUI</span>
+            </div>
+            <button class="btn btn-secondary project-details-btn" data-project="project1">
+              <i class="fas fa-info-circle btn-icon"></i> Project Details
+            </button>
+          </div>
+
+          <!-- Project Card 2 (Tech) -->
+          <div class="glass-card project-card scale-up delay-2" data-category="tech">
+            <div class="project-header">
+              <i class="fas fa-graduation-cap project-folder-icon"></i>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener" class="project-link-btn" aria-label="GitHub Repository">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Smart Course Registration & Notification System</h3>
+            <p class="project-description">
+              Built during my coursework to solve real student enrollment challenges. It automatically validates course prerequisites, monitors class capacity in real time, manages waitlists, and sends status alerts when seats open up.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">System Logic</span>
+              <span class="tech-tag">Data Structures</span>
+            </div>
+            <button class="btn btn-secondary project-details-btn" data-project="project2">
+              <i class="fas fa-info-circle btn-icon"></i> Project Details
+            </button>
+          </div>
+
+          <!-- Project Card 3 (Tech) -->
+          <div class="glass-card project-card scale-up delay-3" data-category="tech">
+            <div class="project-header">
+              <i class="fas fa-terminal project-folder-icon"></i>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener" class="project-link-btn" aria-label="GitHub Repository">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">ATM Machine Program (C)</h3>
+            <p class="project-description">
+              A command-line banking application written in C to get comfortable with pointer arithmetic, memory allocation, and struct-based state machines for deposits, withdrawals, and balance checks.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">C Programming</span>
+              <span class="tech-tag">Pointers</span>
+              <span class="tech-tag">Buffer Management</span>
+            </div>
+            <button class="btn btn-secondary project-details-btn" data-project="project3">
+              <i class="fas fa-info-circle btn-icon"></i> Project Details
+            </button>
+          </div>
+
+          <!-- Project Card 4 (Media) -->
+          <div class="glass-card project-card scale-up delay-1" data-category="media">
+            <div class="project-header">
+              <i class="fas fa-share-nodes project-folder-icon"></i>
+              <div class="project-links">
+                <a href="https://instagram.com" target="_blank" rel="noopener" class="project-link-btn" aria-label="Social Link">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">AI Cloud Solutions (@aicloudsl) Strategy</h3>
+            <p class="project-description">
+              Managing social media strategy and visual content for AI Cloud Solutions (@aicloudsl). I design educational carousels, cloud technology highlights, and posts that build brand presence and engage developer communities online.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">@aicloudsl</span>
+              <span class="tech-tag">Content Strategy</span>
+              <span class="tech-tag">Social Media</span>
+            </div>
+            <button class="btn btn-secondary project-details-btn" data-project="project4">
+              <i class="fas fa-info-circle btn-icon"></i> Strategy Overview
+            </button>
+          </div>
+
+          <!-- Project Card 5 (Media) -->
+          <div class="glass-card project-card scale-up delay-2" data-category="media">
+            <div class="project-header">
+              <i class="fas fa-pen-fancy project-folder-icon"></i>
+              <div class="project-links">
+                <a href="https://linkedin.com" target="_blank" rel="noopener" class="project-link-btn" aria-label="LinkedIn Posts">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Tech Storytelling & Visual Guides</h3>
+            <p class="project-description">
+              Creating visual breakdown carousels and technical guides that simplify complex computer science and AI concepts into clear, engaging social media posts for developers and students.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">B2B Messaging</span>
+              <span class="tech-tag">Infographics</span>
+              <span class="tech-tag">Tech Writing</span>
+            </div>
+            <button class="btn btn-secondary project-details-btn" data-project="project5">
+              <i class="fas fa-info-circle btn-icon"></i> Campaign Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Expertise Section -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <div class="section-tag">
+            <i class="fas fa-layer-group"></i> 03. Skills
+          </div>
+          <h2 class="section-title">Skills & Capabilities</h2>
+          <p class="section-description">
+            The technical tools, programming languages, and media skills I work with.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Column 1: Programming & Tech -->
+          <div class="glass-card skills-column fade-left delay-1">
+            <div class="skills-col-header">
+              <div class="skills-col-icon">
+                <i class="fas fa-microchip"></i>
+              </div>
+              <h3 class="skills-col-title">Programming & Tech</h3>
+            </div>
+
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <i class="fas fa-brain skill-icon"></i>
+                  <span class="skill-name">Artificial Intelligence Concepts</span>
+                </div>
+                <span class="skill-badge">Foundational AI</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <i class="fab fa-java skill-icon"></i>
+                  <span class="skill-name">Java Development</span>
+                </div>
+                <span class="skill-badge">Java & Swing UI</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <i class="fas fa-code skill-icon"></i>
+                  <span class="skill-name">C Systems Programming</span>
+                </div>
+                <span class="skill-badge">Low-Level C</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <i class="fab fa-github skill-icon"></i>
+                  <span class="skill-name">Git & GitHub Version Control</span>
+                </div>
+                <span class="skill-badge">Git & Repos</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <i class="fas fa-tools skill-icon"></i>
+                  <span class="skill-name">Development Workflows (Antigravity IDE)</span>
+                </div>
+                <span class="skill-badge">Tooling</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Digital & Strategy -->
+          <div class="glass-card skills-column fade-right delay-2">
+            <div class="skills-col-header">
+              <div class="skills-col-icon">
+                <i class="fas fa-bullhorn"></i>
+              </div>
+              <h3 class="skills-col-title">Digital & Strategy</h3>
+            </div>
+
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <i class="fas fa-share-alt skill-icon"></i>
+                  <span class="skill-name">Social Media Management</span>
+                </div>
+                <span class="skill-badge">@aicloudsl Media</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <i class="fas fa-pen-nib skill-icon"></i>
+                  <span class="skill-name">Content Strategy & Writing</span>
+                </div>
+                <span class="skill-badge">Technical Writing</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <i class="fas fa-chart-line skill-icon"></i>
+                  <span class="skill-name">Brand Positioning</span>
+                </div>
+                <span class="skill-badge">Brand Strategy</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <i class="fas fa-comments skill-icon"></i>
+                  <span class="skill-name">Developer & B2B Messaging</span>
+                </div>
+                <span class="skill-badge">Developer Outreach</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <div class="section-tag">
+            <i class="fas fa-envelope-open-text"></i> 04. Contact
+          </div>
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-description">
+            Whether you want to discuss a software project, content strategy, or just say hi—feel free to drop a message!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Box -->
+          <div class="glass-card contact-info-card fade-left delay-1">
+            <div>
+              <h3 class="contact-info-title">Let me know how I can help.</h3>
+              <p class="contact-info-text">
+                Whether you want to chat about AI software projects, digital content strategy for your tech brand, or potential academic & career opportunities, feel free to drop me a message!
+              </p>
+
+              <div class="contact-methods">
+                <div class="contact-method-item">
+                  <div class="method-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="method-details">
+                    <label>Direct Email</label>
+                    <a href="mailto:basiltariq2006@gmail.com" onclick="copyEmail(); return false;">basiltariq2006@gmail.com</a>
+                  </div>
+                </div>
+
+                <div class="contact-method-item">
+                  <div class="method-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="method-details">
+                    <label>Location</label>
+                    <span>Karachi • Pakistan</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <label class="form-label" style="margin-bottom: 0.8rem;">Connect via Social Media</label>
+              <div class="social-links">
+                <a href="https://linkedin.com/in/muhammad-basil-33305527a" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn Profile">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener" class="social-link" aria-label="GitHub Profile">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:basiltariq2006@gmail.com" class="social-link" aria-label="Send Email">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="glass-card contact-form-card fade-right delay-2">
+            <form id="contactForm" action="https://formsubmit.co/basiltariq2006@gmail.com" method="POST" novalidate>
+              <input type="hidden" name="_subject" value="New Portfolio Contact Message from BasilTariq.com">
+              <input type="hidden" name="_captcha" value="false">
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="e.g. Alex Morgan" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Your Email Address</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="e.g. alex@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea id="message" name="message" class="form-control" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit-btn" id="submitBtn">
+                <i class="fas fa-paper-plane btn-icon"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Details Modal -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+      <h3 class="modal-title" id="modalTitle">Project Title</h3>
+      <div class="modal-tech" id="modalTech"></div>
+      <p class="modal-body-text" id="modalDesc">Project description goes here.</p>
+      
+      <h4 style="font-size: 1.1rem; margin-bottom: 0.8rem; color: var(--text-main);">Key System Architecture Highlights:</h4>
+      <ul class="modal-features-list" id="modalFeatures"></ul>
+
+      <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+        <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-primary" style="flex: 1;">
+          <i class="fab fa-github btn-icon"></i> View GitHub Repository
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <i class="fas fa-check-circle toast-icon"></i>
+    <span id="toastMessage">Success notification message.</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">BASIL TARIQ</div>
+      <p>© 2026 Basil Tariq • <a href="mailto:basiltariq2006@gmail.com" style="color: var(--text-muted); text-decoration: underline;">basiltariq2006@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript Engine -->
+  <script src="js/main.js"></script>
+</body>
+</html>
