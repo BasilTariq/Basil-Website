@@ -178,7 +178,7 @@ function initTypewriter() {
 
   const titles = [
     "BS Artificial Intelligence Student @ Iqra University",
-    "Digital Strategy & Media @ AI Cloud Solutions (@aicloudsl)",
+    "Digital & Content Strategy Specialist",
     "Java & Systems Developer"
   ];
 
@@ -313,11 +313,11 @@ const projectData = {
     ]
   },
   project4: {
-    title: "AI Cloud Solutions (@aicloudsl) Media Strategy",
-    tech: ["@aicloudsl", "Social Media", "Content Strategy", "Brand Growth"],
-    description: "Managing social media strategy and visual content for AI Cloud Solutions (@aicloudsl). I design educational carousels, cloud technology highlights, and posts that build brand presence and engage developer communities online.",
+    title: "Social Media & Digital Content Strategy",
+    tech: ["Content Strategy", "Social Media", "Brand Growth", "Digital Media"],
+    description: "Managing social media strategy and visual content for tech brands. I design educational carousels, cloud technology highlights, and posts that build brand presence and engage developer communities online.",
     features: [
-      "Content calendar planning and campaign execution for @aicloudsl",
+      "Content calendar planning and campaign execution for digital channels",
       "Designing visual slides that explain cloud infrastructure and AI tool integrations",
       "Tracking post engagement and audience growth to refine content topics",
       "Maintaining an authentic, clear brand voice across social platforms"
